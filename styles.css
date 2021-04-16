@@ -13,6 +13,11 @@
 	color: #1e272e;
 	color: #fff;
 	font-size: 16px;
+	
+  }
+
+  header {
+	  width: 100%;
   }
   
   a {
@@ -99,7 +104,7 @@
   
   .showcase {
 	width: 100%;
-	height: 1060px;
+	height: 90vh;
 	background: url("./img/Moshi_3d_100_MSH.jpg") no-repeat center center/cover;
 	
 	text-align: center;
@@ -117,13 +122,17 @@
   .showcase .btn {
 	margin-top: 20px;
   }
+
+  .MOSHI_OFFICIAL_LOGO {
+	  width: 100%;
+  }
   
   /* News Cards */
   .news-cards {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 25px;
-	margin: 70px 0;
+	margin: 4.375rem 0;
   }
   
   .news-cards img {
@@ -246,12 +255,21 @@
   
   /* Mobil */
   @media (max-width: 700px) {
+
+	body {
+		width: auto;
+	}
+
 	.menu-btn {
 	  display: block;
 	}
   
 	.menu-btn:hover {
 	  opacity: 0.5;
+	}
+
+	.nav-menu-right {
+		display: none;
 	}
   
 	.nav-main ul.nav-menu {
@@ -285,6 +303,33 @@
 	.nav-main ul.nav-menu-right {
 	  margin-right: 50px;
 	}
+
+	.showcase{
+		width: 100%;
+		height: 90vh;
+	}
+
+	.MOSHI_OFFICIAL_LOGO {
+		width: 80%;
+	}
+
+	.news-card {
+		margin: 0 auto;
+	}
+	
+	.news-card {
+		width: 10rem;
+	}
+
+	.news-cards img {
+		width: 100%;
+	}
+
+	.cards-banner-one {
+		width: 60%;
+		margin: 0 auto;
+
+	}
   
 	.news-cards {
 	  grid-template-columns: repeat(2, 1fr);
@@ -302,7 +347,7 @@
 	  grid-template-columns: 1fr;
 	}
   
-	}
+	
 	.footer-links .footer-container {
 	  grid-template-columns: 1fr;
 	}
@@ -310,7 +355,10 @@
 	.footer-links .footer-container ul {
 	  text-align: center;
 	}
+}
    
+    
+  
     
   
   
